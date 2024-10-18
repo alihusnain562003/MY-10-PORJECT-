@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>TRAVELER - Free Travel Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    #service-box {
+    background-color: white; /* Default background color */
+   /* Background color on hover */
+    color:#54B4D3 ; /* Default text color for better readability */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background and text color */
+}
+#service-box:hover {
+    background-color: #54B4D3; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+#service-box i, #service-box h5, #service-box p {
+    transition: color 0.3s; /* Ensure color transition is smooth */
+}
+#service-box:hover i, #service-box:hover h5, #service-box:hover p {
+    color: white; /* Text color on hover */
+}
+
+
+
+
+
+</style>
+
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>expense voyage@gmail.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-info px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-info px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-info px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-info px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-info pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-info"><span class="text-dark">TRAVEL</span>ER</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="home.html" class="nav-item nav-link text-info">Home</a>
+                        <a href="about.html" class="nav-item nav-link text-info">About</a>
+                        <a href="service.html" class="nav-item nav-link text-info">Services</a>
+                        <a href="package.html" class="nav-item nav-link text-info">Tour Packages</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-info" data-toggle="dropdown">Pages</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item text-info">Blog Grid</a>
+                                <a href="blogdetails.html" class="dropdown-item text-info">Blog Detail</a>
+                                <a href="destination.html" class="dropdown-item text-info">Destination</a>
+                                <a href="guide.html" class="dropdown-item text-info">Travel Guides</a>
+                                <a href="testimonial.html" class="dropdown-item text-info">Testimonial</a>
+                            </div>
+                        </div>
+                       <a href="booking.html" class="nav-item nav-link text-info">Booking</a>
+                        <a href="logout.php" class="nav-item nav-link text-info px-3">logout</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid page-header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
+                <h3 class="display-4 text-white text-uppercase">Booking</h3>
+                <div class="d-inline-flex text-white">
+                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                    <p class="m-0 text-uppercase">Booking</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+    <!-- Booking Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-info text-uppercase" style="letter-spacing: 5px;">Booking</h6>
+                <h1>For Booking </h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="Booking-form bg-white" style="padding: 30px;">
+                        <div id="success"></div>
+                        <form name="sentMessage" id="BookingForm" novalidate="novalidate">
+                            <div class="form-row">
+                                <div class="control-group col-sm-6">
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group col-sm-6">
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control p-4" id="Contect" placeholder="Contect"
+                                    required="required" data-validation-required-message="Please enter a Contect" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group phone-no">
+                             
+                                <select class="form-control" id="country" onchange="updateCities()">
+                                    <option value="pakistan">Australia</option>
+                                    <option value="usa">India</option>
+                                    <option value="canada">UK</option>
+                                    <option value="canada">UAE</option>
+                                    <option value="canada">Indonsia</option>
+                                    <option value="canada">South Africa</option>
+                            
+                                </select>
+                            </div>
+                            <div class="control-group"></div>
+                            <div class="form-group age">
+                             
+                                <select class="form-control" id="city">
+                                    <option value="citiesByCountry">Select City</option>
+                                </select>
+                            </div>
+                           
+
+
+                          
+                            <div class="text-center">
+                                <button class="btn btn-info py-3 px-4" type="submit" id="booking">Book</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <script>
+        function updateCities() {
+            // Get the selected country
+            var country = document.getElementById('country').value;
+    
+            // Define city options for each country
+            var citiesByCountry = {
+                Australia: ['Adelaide', 'Brisbane', 'Canberra', 'Darwin', 'Gold Coast', 'Hobart', 'Melbourne', 'Newcastle', 'Perth'],
+                India: ['Ahmedabad', 'Bangloru', 'Channai','Dehli','Hyderabad','Jaipur','Kolkata','Mumbai','Puna' ],
+                UK: ['Bristol', 'Cardiff', 'Edingburg','liverpool', 'london','manchester','newcastle',],
+                USA: ['boston','chicago','houtan','Las vegas','Los angeles','Miami','New york','San franciso', 'Washington'],
+                Indonsia: ['Bali', 'Bandung', 'Batam', 'Makassar', 'Medan', 'Palembang', 'Semarang', 'Surabaya', 'Yogyakarta'],
+                SouthAfrica: ['Bloemfontein', 'Cape Town', 'Durban', 'East London', 'Johannesburg', 'Kimberley', 'Polokwane', 'Port Elizabeth', 'Pretoria']
+            };
+    
+            // Get the city dropdown
+            var citySelect = document.getElementById('city');
+    
+            // Clear any existing options
+            citySelect.innerHTML = '<option value="">Select City</option>';
+    
+            // Check if the selected country has cities
+            if (country && citiesByCountry[country]) {
+                // Populate the city dropdown based on the selected country
+                citiesByCountry[country].forEach(function(city) {
+                    var option = document.createElement('option');
+                    option.value = city.toLowerCase();
+                    option.text = city;
+                    citySelect.appendChild(option);
+                });
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="text-center mb-3 pb-3">
+            <h6 class="text-info text-uppercase" style="letter-spacing: 5px;">Booking</h6>
+            <h1>For Booking </h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="Booking-form bg-white" style="padding: 30px;">
+                    <div id="success"></div>
+                    <form name="sentMessage" id="BookingForm" novalidate="novalidate">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Amount (USD)</label>
+                                <input class="form-control" id="amount" name="amount" type="number" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Convert to</label>
+                                <select id="currency" name="currency" class="form-control" required>
+                                    <option value="" disabled selected>Select a currency</option>
+                                    <option value="IDR">IDR (Indonesian Rupiah)</option>
+                                    <option value="INR">INR (Indian Rupee)</option>
+                                    <option value="USD">USD (US Dollar)</option>
+                                    <option value="ZAR">ZAR (South African Rand)</option>
+                                    <option value="EUR">EUR (Euro)</option>
+                                    <option value="GBP">GBP (British Pound)</option>
+                                    <option value="JPY">JPY (Japanese Yen)</option>
+                                    <option value="AUD">AUD (Australian Dollar)</option>
+                                    <option value="CAD">CAD (Canadian Dollar)</option>
+                                    <option value="CHF">CHF (Swiss Franc)</option>
+                                    <option value="CNY">CNY (Chinese Yuan)</option>
+                                    <option value="MXN">MXN (Mexican Peso)</option>
+                                    <option value="BRL">BRL (Brazilian Real)</option>
+                                    <option value="RUB">RUB (Russian Ruble)</option>
+                                    <option value="PKR">PKR (Pakistani Rupee)</option>
+                                </select>
+                            </div>
+                        
+            <div class="form-group">
+                <label>Converted Amount</label>
+                <input class="form-control" id="convertedAmount" type="text" readonly>
+            </div>
+            <a class="btn btn-primary"  role="button">Convert</a>   
+         </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <script>
+        function convertCurrency() {
+            const amount = document.getElementById('amount').value;
+            const currency = document.getElementById('currency').value;
+    
+            if (currency && amount) {
+                const url = `https://v6.exchangerate-api.com/v6/a19784b32072e897869606a0/latest/USD`;
+                console.log("Fetching from URL:", url);
+    
+                fetch(url)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        const conversionRate = data.conversion_rates[currency];
+                        if (!conversionRate) {
+                            throw new Error("Currency not found in response.");
+                        }
+    
+                        const convertedAmount = amount * conversionRate;
+                        // Update only the converted amount field
+                        document.getElementById('convertedAmount').value = `${convertedAmount.toFixed(2)} ${currency}`;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching exchange rates:', error);
+                        // Optionally clear the converted amount field on error
+                        document.getElementById('convertedAmount').value = 'Error';
+                    });
+            } else {
+                document.getElementById('convertedAmount').value = '';
+            }
+        }
+    
+        document.getElementById('currency').addEventListener('change', convertCurrency);
+        document.getElementById('amount').addEventListener('input', convertCurrency);
+    </script>
+    
+    
+    
+ <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">EXPANSE</span></h1>       
+                       <h1 class="text-info"><span class="text-white">VOGA</span>GE</h1>
+
+
+                </a>
+                <p>"Explore the world with EXPENSE VOYAGE – Where unforgettable journeys begin."
+
+</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-info btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-info btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-info btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-info btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Our Services</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Usefull Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contect Us</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope mr-2"></i>expense voyage@gmail.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Newsletter</h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-info px-3">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-info btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+
+    <!-- Booking Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contect.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
